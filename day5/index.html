@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+
+*{
+    box-sizing: border-box; 
+    margin:0
+
+   
+
+}
+   
+
+
+
+#box{
+    display:none
+}
+
+
+#box{
+    display:block
+}
+
+
+.child{
+    display: inline-block;
+    width:30%;
+    margin:1%;
+    padding:1%;
+    border:1px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.child button{
+    margin:20px 0px 20px 0px;
+}
+
+a:visited{
+    color:orange;
+   
+}
+a:hover{
+    color:yellow
+}
+
+a:active{
+    color:green
+    
+}
+
+a:link{
+    color:pink
+}
+
+
+
+
+
+input:focus{
+    background-color: yellow;
+    color:red 
+
+}
+
+li:nth-child(odd){
+    background-color: blue;
+}
+
+
+    </style>
+</head>
+<body>
+    <!--
+    what is css
+    how to insert css 
+    inline internal external
+
+    selector {property:value; property:value; }
+
+
+    simple selectors
+    tagname
+    id -#
+    class- .
+    grouping - h1,h2,h3, #el1,#el2 , #el3,.el1
+    universal- *
+
+    *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0}
+
+    boxmode
+    content - withd height
+    padding
+    border
+    marging
+
+    inline-- padding
+    block --all properties- wid,hei,margi,pad
+    inline-block
+
+
+
+    how to hide a element
+    visibility:hidden 
+    visibility:visible 
+    
+
+    display:none
+    display:block
+
+
+
+    combinators - target the html elemetns based
+    on a relation ship
+
+    descendent selector - it selects the child and subchild of
+    an element- space
+
+    child selectors- it selct direct childs only->
+
+    adjacen sibling- it select immediate sibling - +
+    general sibling- it select all sibling - ~
+
+
+    pseduo class selectors-
+    a:link{
+    }
+
+    a:visited{
+    }
+
+    a:hover{
+    }
+
+    a:active{
+
+    }
+
+    input:focus{
+    }
+
+    li:nth-child(even){
+    }
+     
+
+    
+    -->
+
+    <h1>
+        <i class="fa-solid fa-bars"></i>menu
+    </h1>
+    <input type="text">
+
+    <ul>
+        <li>content1</li>
+        <li>content2</li>
+        <li>content3</li>
+        <li>content4</li>
+        <li>content5</li>
+        <li>content6</li>
+        <li>content7</li>
+        <li>content8</li>
+        <li>content9</li>
+        <li>content10</li>
+    </ul>
+    
+
+    <h1>
+        <a href="https://en.wikipedia.org/wiki/Kotlin_(programming_language)">kotlin</a>
+    </h1>
+
+    <a href="https://en.wikipedia.org/wiki/Flutter_(software)">flutter</a>
+    <div>
+       
+    </div>
+    <h1>Heading 1</h1>
+    
+
+
+    <h1>about cards</h1>
+
+
+    <div class="parent">
+        <div class="child">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVFV_ihxipeZmqzxF_VUu2zkJUrxL7vgGidg&s" alt="">
+            <p>lorem ipsum</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit at, modi ex corrupti iusto cum id animi voluptatibus non, placeat vel dolore perferendis aspernatur natus officiis quod quae sapiente?</p>
+        <button>view more</button>
+        </div>
+
+         <div class="child">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVFV_ihxipeZmqzxF_VUu2zkJUrxL7vgGidg&s" alt="">
+            <p>lorem ipsum</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit at, modi ex corrupti iusto cum id animi voluptatibus non, placeat vel dolore perferendis aspernatur natus officiis quod quae sapiente?</p>
+        <button>view more</button>
+        </div>
+
+         <div class="child">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVFV_ihxipeZmqzxF_VUu2zkJUrxL7vgGidg&s" alt="">
+            <p>lorem ipsum</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit at, modi ex corrupti iusto cum id animi voluptatibus non, placeat vel dolore perferendis aspernatur natus officiis quod quae sapiente?</p>
+        <button>view more</button>
+        </div>
+
+
+    </div>
+
+    
+    <div class="parent">
+        <div class="child">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVFV_ihxipeZmqzxF_VUu2zkJUrxL7vgGidg&s" alt="">
+            <p>lorem ipsum</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit at, modi ex corrupti iusto cum id animi voluptatibus non, placeat vel dolore perferendis aspernatur natus officiis quod quae sapiente?</p>
+        <button>view more</button>
+        </div>
+
+         <div class="child">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVFV_ihxipeZmqzxF_VUu2zkJUrxL7vgGidg&s" alt="">
+            <p>lorem ipsum</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit at, modi ex corrupti iusto cum id animi voluptatibus non, placeat vel dolore perferendis aspernatur natus officiis quod quae sapiente?</p>
+        <button>view more</button>
+        </div>
+
+         <div class="child">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVFV_ihxipeZmqzxF_VUu2zkJUrxL7vgGidg&s" alt="">
+            <p>lorem ipsum</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit at, modi ex corrupti iusto cum id animi voluptatibus non, placeat vel dolore perferendis aspernatur natus officiis quod quae sapiente?</p>
+        <button><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVFV_ihxipeZmqzxF_VUu2zkJUrxL7vgGidg&s">click</a></button>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+</html>
