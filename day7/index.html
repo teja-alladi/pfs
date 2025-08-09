@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        p{
+            width:200px;
+            background-color: lavenderblush;
+            height:100px;
+            overflow-y: scroll;
+            scrollbar-width: none;
+        }
+
+        img{
+            width:150px;
+            height:150px
+        }
+
+        .container{
+            background: lightpink;
+            margin:50px;
+            height: 80vh;
+            position:relative;
+
+        }
+
+        #img1{
+            position: absolute;
+           
+        }
+        #img2{
+            position: absolute;
+            right:-50px;
+            top:-50px
+            
+           
+        }
+           
+        #img3{
+            position: absolute;
+            bottom:0
+        }
+        #img4{
+            position: absolute;
+            right:0;
+            bottom:0;
+            
+        }
+       
+        
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            background-color: blue;
+            height: 20vh;
+            position: sticky;
+            width:100%;
+            top:10px;
+            z-index: 2;
+            bottom:20px
+        }
+
+        .el1{
+            background: red;
+            width:100%;
+            height: 100vh;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/006/937/544/small_2x/multicolored-abstract-textured-grunge-background-template-vector.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+          
+
+        }
+        
+      
+    </style>
+</head>
+<body>
+    
+    <!-- 
+    units
+    text pro
+    font prop
+
+    overflow:
+    visible
+    hidden
+    scroll
+    auto
+
+    scrollbar-width:none
+
+
+    postions- allowys to control the element position in a doc
+            by apply top right bottom left and z-index
+
+    static positon -it will not take any top bottom like properties
+    relative position- 
+       it will be in the normal flow- moves from its postion
+       top bottom left right z-index will be applied to it
+       top and left have high priority
+
+    
+    absolute position
+      it will according to the positioned parent if there is no parent
+      it moves according to viewport
+      top bottom left right z-index will be applied to it
+
+      right way of usage - take relative to the parent and absolute to the 
+      childs and move the childs by applying top right....
+
+
+    fixed position - it moved according to the viewport and fixed to the scren
+
+    sticky position- it moves and only fixed when condition met
+                    navbars
+
+
+
+      -->
+
+      <div class="el1">
+
+      </div>
+  
+
+
+      <div class="container">
+
+          <img id="img1" src="Doraemon_character.png" alt="">
+          <img  id="img2" src="NobitaNobi.png" alt="">
+          <img src="suzuka.jpg" alt="" id="img3">
+          <img id="img4" src="zeon.jpg" alt="">
+          
+        </div>
+  
+      <!-- <div class="navbar">
+        <h1>somec hading</h1>
+        <div>menu</div>
+      </div> -->
+
+        <h1>some heading </h1>
+   <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo error modi mollitia a officia id architecto at laboriosam nostrum obcaecati provident vitae porro, commodi nam quasi? Quis, unde velit.</h1>
+<h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint corrupti voluptate explicabo fugiat odio ipsam dolorum necessitatibus dolore recusandae molestias laboriosam consequatur quaerat, obcaecati incidunt ducimus nostrum officia, tenetur earum!</h1>
+        <h1>some heading </h1>
+   <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo error modi mollitia a officia id architecto at laboriosam nostrum obcaecati provident vitae porro, commodi nam quasi? Quis, unde velit.</h1>
+<h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint corrupti voluptate explicabo fugiat odio ipsam dolorum necessitatibus dolore recusandae molestias laboriosam consequatur quaerat, obcaecati incidunt ducimus nostrum officia, tenetur earum!</h1>
+         <h1>some heading </h1>
+   <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo error modi mollitia a officia id architecto at laboriosam nostrum obcaecati provident vitae porro, commodi nam quasi? Quis, unde velit.</h1>
+<h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint corrupti voluptate explicabo fugiat odio ipsam dolorum necessitatibus dolore recusandae molestias laboriosam consequatur quaerat, obcaecati incidunt ducimus nostrum officia, tenetur earum!</h1>
+         <h1>some heading </h1>
+   <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo error modi mollitia a officia id architecto at laboriosam nostrum obcaecati provident vitae porro, commodi nam quasi? Quis, unde velit.</h1>
+<h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint corrupti voluptate explicabo fugiat odio ipsam dolorum necessitatibus dolore recusandae molestias laboriosam consequatur quaerat, obcaecati incidunt ducimus nostrum officia, tenetur earum!</h1>
+     </body>
+</html>
