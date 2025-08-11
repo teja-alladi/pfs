@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .parent{
+        display: flex;
+        height: 80vh;
+        justify-content:center ;
+        /* flex-wrap:wrap */
+       
+        /* align-items: flex-start; */
+       
+    }
+
+    .child{
+        background-color: lightpink;
+        border:1px solid black;
+        padding:2px;
+        width:300px;
+    }
+
+    .child1{
+        flex-basis: 33%
+    }
+
+    .child2{
+        flex-basis: 33%;
+    }
+    .child3{
+        flex-basis: 33%;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header>div{
+        display: flex;
+        gap:20px;
+    }
+
+    .main{
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        
+        background-image: url("https://www.w3schools.com/w3images/architect.jpg");
+    }
+  
+    .flexparent{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+
+    .flexchild{
+               background-image: url("https://www.w3schools.com/w3images/architect.jpg");
+               width:300px;
+               height: 300px;
+               background-size: 100% 100%;
+               font-size: 2rem;
+
+    }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    positons
+    static - 
+    relative - 
+    absolute- 
+    fixed- 
+    sticky- 
+
+    background-
+
+
+    flexbox
+    it is a one dimensional layout model used to create complex web layouts
+    flex have flex-container properties(parent) and flex-items(child properties)
+    by applying display:flex in parent we can control the childs
+
+    parent propeties
+    1. display:flex -default(row)
+    2. flex-direction: it control flex items diection  
+          column or row or row-reverse or column-reverse
+    3. justify-content: it controls the child items on main axis
+                       center
+                       flex-end
+                       flex-start(default)
+                       space-between
+                       space-evenly
+                       space-around
+    4. align-items: it controls the child items on cross axis(y axis)
+                        center
+                        flex-start
+                        flex-end
+                        stretch(default)
+    5. align-content - it controls the child items on cross axis(y axis) when
+    there are more than one row
+                       center
+                       flex-end
+                       flex-start
+                       space-between
+                       space-evenly
+                       space-around
+                       stretch(default)
+
+
+    6.flex-wrap:wrap or wrap-reverse
+
+
+    7.gap:20px;
+
+
+    flex child properties
+    1.flex-basis:it specifies the intial width of an element
+    2. order : 1,2,3,4 
+                423 1
+
+    3. flex-grow: 3
+    4. flex-shrink: 0
+
+
+
+
+    grid
+
+    media queries
+    
+    -->
+    
+    <div class="parent">
+        <div class="child child1">content 1</div>
+        <div class="child child2">content 2</div>
+        <div class="child child3">content 2</div>
+       
+
+
+    </div>
+
+
+    <div class="header">
+        <h1>Br architech</h1>
+        <div>
+
+            <div>about</div>
+            <div>contact</div>
+            <div>services</div>
+        </div>
+    </div>
+
+    <div class="main">
+      <h1 class="main-content">br architech</h1>
+    </div>
+
+    <div class="section">
+        <h2>project</h2>
+
+        <div class="flexparent">
+            <div class="flexchild">childs</div>
+            <div class="flexchild">childs</div>
+            <div class="flexchild">childs</div>
+            <div class="flexchild">childs</div>
+        </div>
+
+         <div class="flexparent">
+            <div class="flexchild">childs</div>
+            <div class="flexchild">childs</div>
+            <div class="flexchild">childs</div>
+            <div class="flexchild">childs</div>
+        </div>
+    </div>
+</body>
+</html>
