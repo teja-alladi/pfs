@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .container{
+            background-color: blue;
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap:20px;
+
+        }
+        .child{
+            background: #020024;
+background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 8%, rgba(0, 212, 255, 1) 100%);
+            
+            padding:20px;
+         
+            height: 300px;
+        }
+
+.child {
+  width: 240px;
+  height: 360px;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(46px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 14px 7px rgba(255, 255, 255, 0.7);
+  position: relative;
+  overflow: hidden;
+}
+
+.child::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+.child ::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
+}
+       
+
+        @media screen and ( width<992px){
+            body{
+                background:blue;
+            }
+            .container{
+                grid-template-columns: 1fr 1fr;
+                
+            }
+           
+        }
+
+         @media screen and (width<700px){
+            body{
+                background: red;
+            }
+            .child{
+                color:white;
+              
+            }
+
+            .container{
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        /* differnt tools for css
+        animate.css  - copy cdn - copy classnames
+        aos library- copy cdn - copy data attrbute
+        superdesigner-tools- color combinator- backgroun generator
+        css gradients generator- 
+        glass morphism
+        freefrontend.com
+        ui verse
+        codepend
+        fontawesome
+        
+
+
+        
+        
+        
+        */
+    </style>
+</head>
+<body>
+
+    <!-- 
+    grid- two dimensional layouts
+
+    parent 
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:20px;
+    justify-content:
+    align-items:
+    align-content:
+
+    child properties
+    grid-column:start/end
+    grid-row:start/end
+
+    
+  
+    media queries
+
+
+    responsivnes- ability of a web to adope to differen screen and devices
+
+    breakpoints- 
+    -->
+
+    <div class="container">
+        <div class="child animate__animated animate__swing">content</div>
+        <div class="child animate__animated animate__bounce">content</div>
+        <div class="child">content</div>
+        <div class="child">content</div>
+        <div class="child">content</div>
+        <div class="child">content</div>
+        <div class="child">content</div>
+        <div class="child">content</div>
+
+    </div>
+
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium. Eveniet, saepe accusantium sapiente totam voluptatum commodi sint quo, laborum eaque optio voluptatem dicta quis. Modi, odit minima! Maxime, natus!</h1>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium. Eveniet, saepe accusantium sapiente totam voluptatum commodi sint quo, laborum eaque optio voluptatem dicta quis. Modi, odit minima! Maxime, natus!</h1>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium. Eveniet, saepe accusantium sapiente totam voluptatum commodi sint quo, laborum eaque optio voluptatem dicta quis. Modi, odit minima! Maxime, natus!</h1>
+        <div class="child " data-aos="fade-right">content</div>
+        <div class="child " data-aos="fade-right">content</div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+</body>
+</html>
