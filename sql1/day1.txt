@@ -1,0 +1,135 @@
+database- collection of data that can be accessed throug 
+digitally, controlled by dbms
+
+dbms-database management system
+it is software application that is used to manipulate database
+
+types of dbms
+relational database management system
+ - data was stored in structured format like tables
+ - mysql, postgre sql,oracle, rds
+
+non relational database management system
+- data was stored in semi strucuted- objects key value pair
+ graphs
+- mongodb, no sql
+
+sql(strucutured query language)- it a statically typed programming language that is 
+used to manipulate relation database
+it is used to query and retrieve the data
+
+
+database-place
+mysql-software application
+sql-language
+
+tables- collection of rows and columns
+columns- contains field names
+rows-contains field values
+
+sql - sub languages
+ddl- data definition language
+dml- data manipulation language
+dql- data query language
+dcl-data control language
+tcl-transaction control language
+
+workbench
+mysql command line client
+mysql shell- install
+
+how to connect to the my sql server through shell
+1) \sql
+2) \connect root@localhost:3306
+3) password - Y
+4) to clear- \! cls;
+
+datatypes in mysql
+1) int - it is used to store whole number (negative or positive)
+2) varchar(12) and char(10)8fixed length- it is used to collection of chracters
+3) decimal(precision,scale)- 998.233- total-precision
+                                      decimal values-scale
+   decimal(6,3)
+   decimal(11,2)
+4) Boolean- True or false
+            1 or 0
+5) text - large data
+6) Date
+
+city - visak hyd cehn   varchar(30)
+city codes- in pk us -char(2)
+
+
+ddl- data definition language
+it is used to strucure the database ,table and users
+it is used to create , alter and drop the database and tables and users
+
+database 
+
+show databases; - list of all databases
+create database dbname; - to create a new database
+select database();--displays the current database
+use dbname;--- to select a database 
+drop database dbname;
+
+tables- how to strucure the table
+
+show tables;   - list of all tables
+
+it create the structure
+create table tablename (
+    id int,
+    name varchar(30),
+    city varchar(30),
+    mobile_no char(10)
+)
+
+to show the description of the table
+desc tablename;
+
+to  change the structure
+to add field 
+alter table tablename ADD fieldname datatype ;
+
+to modify field datatype
+alter table tablename MODIFY fieldname datatype;
+
+to drop a columns
+alter table tablename DROP COLUMN fieldname;
+
+to rename a field 
+alter table tablename RENAME COLUMN oldname TO newname;
+
+to rename a table
+alter table tablename RENAME TO  newtablename;
+
+remove the table
+drop table tname;
+
+remove the values
+truncate table tname;
+
+
+dml- data manipulation languagee
+it deals with data inside the table
+
+insert, update, delete
+
+how to insert values to the table
+INSERT INTO  tname (id,name,city) values (1, "riwan", "hyd");
+
+multiple values;
+INSERT INTO  tname (id,name,city) values (1, "riwan", "hyd"), (2,"venky","bang"),(3,"haseeb","chennai");
+INSERT INTO  tname (id,name) values (1, "riwan")
+
+how to update values
+update tname set fieldname="value"  where id=1
+
+how to delete a particular value
+delete from tname where id=1;
+
+dql- data query language
+select * from venky;
+select id from venky;
+select id,name from venky;
+select id as stdid from venky;
