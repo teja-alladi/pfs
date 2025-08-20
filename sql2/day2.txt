@@ -1,0 +1,77 @@
+intro 
+ddl- create , alter and drop, truncate--database,table,users
+
+dml- insert into, update, delete
+
+dql- retrive the data - select 
+
+
+operators
+arthimetic operators
++ 
+-
+*
+/
+% 
+
+comparsion operators
+=
+!= <>
+<
+>
+<=
+>=
+
+logical operators
+and 
+or 
+not
+
+special operators
+is null
+is not null
+in ()
+not in ()
+between
+not between
+
+wild characters operators-like
+%-to match one or more
+_- to match particulart 
+
+
+
+
+clauses- it is used to filter, sort and removing duplicates from the records 
+
+where - select , update and delete-used to apply particular conditon based
+
+distinct- it is used to get the unique values 
+select distinct deptno from emp;
+
+having - it is used to check for a particular condition when used with group by
+group by-
+
+order by- 
+select * from emp order by sal;---accending
+select * from emp order by sal desc: ---descending
+
+
+highest salary
+second highest
+
+limit - it is used to get the particular rows
+
+offset- it is used to skip the particular rows
+
+
+
+
+primary key- 
+one table contains one primary key
+not null and unique
+
+create table tname (
+    id int primary key,
+    name varchar(20)
+);
