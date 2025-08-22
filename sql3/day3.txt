@@ -1,0 +1,73 @@
+#operators -arth,compar,logical,special 
+#clauses- where, order by, limit ,offset, distinct,group by
+having
+
+
+#single row functions- it returns one result for one row
+one input ---one output
+
+upper()- converts the strings to the uppercase
+lower()- converts the strings to the lowercase
+length()- no of characters in a strings
+concat()- it add two or more strings
+substring(colname,start,length)- it is used to extract a
+part of the string-index starts from 1
+
+math related
+round()- rounds off the integer to its nearest
+ceil()- rounds up the interger to the highest
+floor()- round down the integer to the lowest
+
+date related
+
+curdate()- it returns the current date
+
+curtime()- it return the time
+
+datediff(firstcol,secondcol)
+
+yeart() month() day()
+hour() minute() second()
+
+
+
+
+
+#multi row functions -it return one result for multiple rows
+10inputs-one output
+
+max()-returns max value in no of values
+1,2,3,4,100,30,2,3-100
+
+min()- min value-1
+count()- counts the no of values-8
+avg()-100,50,50- 66.666
+sum()-100,50,50-200
+
+
+group by
+
+select deptno from emp group by depno;
+
+constraints- 
+rules applied to the table columns
+
+not null-name,city
+unique- ids
+primary keu- not null + unique
+check
+default
+auto increment -primay key
+foriegn key- relation ship between table
+        tabl1-1 ----id uid name
+        tablle 2------id
+create table child (
+deptid int primary key ,
+age int,
+city varchar(20)
+, foreign key deptid refernces student(id)
+)
+
+
+
+
