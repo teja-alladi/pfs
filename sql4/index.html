@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="parent"></div>
+    <!-- 
+
+    html css-static
+
+    javascript - scripting language -
+        dynamic webpages - user can interact
+                 crud operations - data create , read, update, delete
+                 login signup, crud operations , filter , search ,sort
+    
+    two ways
+    line a
+    line b 15mins
+    line c
+
+
+    synchronous
+    line a
+    line c       line b
+   
+
+    asynchronous
+    
+    
+
+    inline 
+    internal script
+    external demo.js
+
+
+    -->
+
+    <script>
+      // print ----console.log("Hello World"
+
+      // variables - to store data\
+      // var ,let and const
+      // var a=10;
+      //var a=20;
+
+      //let b=10
+      // b=20
+      //let b=20;not valid
+
+      //const c=10
+      // c=20
+
+      //identifier rules- same like python
+      // 1. case sensitive
+      // 2. must start with letter or underscore
+      // 3. no special characters
+      // 4. no spaces
+
+      // inp=prompt("Enter your name");
+
+      //datatypes
+      // primitive-sinlge
+      // String
+      // Number
+      // boolean
+      // null
+      // undefined   var a
+
+      // non primiteve
+
+      // arth assignment
+
+      // var a=10;
+
+      // var inp=+prompt("Enter your name");
+
+      // c= a==inp? 'true': 'false';
+      // console.log(c);
+
+      // if (a==inp){
+
+      //     console.log("true")
+      // }
+      // else if(a==c){
+      //     console.log("true")
+      // }
+      //  else{
+
+      //      console.log("false")
+      //  }
+
+      //  loops
+
+      // for (var i=0; i<5; i++){
+      //     console.log(i);
+      // }
+
+      // while (cond){
+      //     console.log(i);
+      //    i++;
+      // }
+
+      // for ( i in li){
+      //     console.log(i);
+      // }
+
+      // let arr=[1,2,3,4,5,6,7,8,9,10];
+
+      // for (i in arr){
+      //     fetch('https://fakestoreapi.com/products/')
+      //         .then(res=>res.json())
+      //         .then(json=>{a=json
+
+      //             console.log(a[i])
+
+      //         }
+
+      //         )
+
+      //     child=document.createElement("div")
+      //     child.innerHTML=arr[i]
+      //     child.style.backgroundColor="lightblue"
+      //     child.style.border="2px solid black"
+      //     child.style.margin="10px"
+
+      //     if (i==3){
+      //         child.style.backgroundColor="lightgreen"
+      //     }
+
+      //     parent.appendChild(child)
+      // }
+
+      var parent = document.getElementById("parent");
+
+      async function apidata() {
+        parent.style.display = "grid";
+        parent.style.gridTemplateColumns = "1fr 1fr 1fr";
+        let response = await fetch("https://fakestoreapi.com/products/");
+        let data = await response.json();
+        console.log(data);
+
+        for (i in data) {
+          console.log(data[i]);
+          child = document.createElement("div");
+
+          child1 = document.createElement("div");
+          child1.innerHTML = data[i].title + data[i].price;
+          child1.style.backgroundColor = "lightblue";
+          child1.style.border = "2px solid black";
+          child1.style.margin = "10px";
+
+          img = document.createElement("img");
+          img.src = data[i].image;
+          img.style.width = "100px";
+          img.style.height = "100px";
+          child.append(child1, img);
+
+          parent.appendChild(child);
+        }
+      }
+
+      apidata();
+    </script>
+  </body>
+</html>
