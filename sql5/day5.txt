@@ -1,0 +1,125 @@
+joins - combine to reduce redundancy
+
+inner join - match 
+left join - all left match
+right join - match all right
+full - merge both tables
+cross join - m*n 
+self jon- 
+
+
+tcl - transaction control language
+
+used to manage transactions
+transaction - sequence of operation in a single unit
+
+by default mysql is set auto commit 
+
+
+set autocommit=0;               turning of autocommit
+set autocommit=1;                turn operation
+
+
+query 1
+query2
+query 3
+
+
+commit ;
+
+
+queries flow
+
+set autocommit=0;
+
+insert into demo values (1,"raj");
+insert into demo values (1,"ram");
+insert into demo values (1,"rani");
+
+commit;
+
+
+
+
+2 values
+q1
+start transaction;
+query2
+query3
+
+rollback;
+
+
+
+3 values
+start transaction
+query1
+query2 -----savepoint s1
+query3
+query4---savepoint s2
+
+query5
+query6---savepint s3
+
+query7----savepint s4
+query 8
+
+1st - rollback - 3 values
+
+
+
+
+2nd rollback to s4-upto query 7-10val
+
+3r rollbac to s1 -upto query 2 - 5val
+ rollback to s3 - there is no savepoint
+
+
+
+
+data control language 
+it is used to manage the user base and privileges
+
+
+select user()-- tell you the current user
+
+creating the user
+create user 'username'@'localhost' identified by 'pass';
+\c username@localhost:3306 
+select user()
+
+
+privileges- permissiions
+show privileges;
+
+giving permissiions
+grant select on practice.emp to 'rizwan'@'localhost';
+grant select on practice.* to 'rizwan'@'localhost';
+grant select on *.* to 'rizwan'@'localhost';
+
+
+how to check;
+
+show grants for 'rizwan'@'localhost';
+
+removing permissiions
+revoke select on *.* from 'rizwan'@'localhost';
+
+
+
+
+drop the user
+drop user 'name'@'localhost';
+
+
+
+
+
+
+
+
+
+
+
+
+
