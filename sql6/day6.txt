@@ -1,0 +1,87 @@
+tcl
+commit
+set autocommit=0
+rollback
+savepoint
+rollback to s
+
+dcl
+create user
+grant privileges to 
+revoke from
+show grants
+
+drop user
+
+set password
+alter
+
+
+
+
+
+procedures
+
+it is a set of statements or queries stored in a database
+it allows user to execute a set of query with a single query
+
+delimiter ;
+delimiter %
+delimiter $$
+
+syntax
+query 1
+query 2
+query 3
+
+delimiter $$
+
+create procedure getdetails ()
+begin
+query1;
+query2;
+query3;
+end $$
+
+call getdetails() $$
+
+delimiter ;
+call getdetails();
+
+
+
+how to write dynamic procedure- how to use inputs
+
+
+delimiter $$
+
+create procedure incsalnew(in a int, in b varchar(20))
+begin
+update emp set sal=a where ename=b;
+end $$
+
+call incsalnew(3000,'smith')$$
+call incsalnew(3000,'james')$$
+
+
+how to check procedures
+show procedure status where db='practice';
+
+how to drop
+drop procedure incsal;
+
+
+
+create procedure getminmax(out name1 int, out name2 int,in dpt int)
+begin
+select max(sal) into name1 from emp;
+select min(sal) into name2 from emp;
+end$$
+
+call getminmax( @a , @b,10)
+select @a , @b
+
+
+
+
+subqueries
